@@ -1,4 +1,5 @@
 import { StageConfig } from ".";
+import { Accounts } from "../accounts/accounts";
 import { awsRegion } from "../constants";
 
 export const StageAlias = {
@@ -13,7 +14,7 @@ export const stages: Record<StageAlias, StageConfig> = {
             stageName: StageAlias.app,
             env: {
                 region: awsRegion,
-                account: process.env.CDK_DEFAULT_ACCOUNT,
+                account: Accounts.app,
             }
         }
     }

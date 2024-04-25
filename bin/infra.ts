@@ -19,8 +19,8 @@ const env = {
 
 new Pipelinestack(app, 'aws-pipeline', {
 stages: stages.app,
-repositoryBranch: 'main',
-repositoryIdentifier: 'mrsujitsah/awspipeline',
+repositoryBranch: 'master',
+repositoryIdentifier: 'mrsujitsah/infra',
 repositoryConeectionArn: 'arn:aws:codestar-connections:us-east-1:058264362412:connection/467f1d5e-8ba6-4edd-9323-508d834f52f8',
 projectName: 'AWS-PIPELINE',
 env: env
