@@ -75,9 +75,8 @@ export class Pipelinestack extends Stack {
     get synth(): ShellStep{
         return new ShellStep('Synth', {
             input: this.pipelineSource,
-            primaryOutputDirectory: 'infra/cdk.out',
+            primaryOutputDirectory: 'cdk.out',
             installCommands: [
-                'cd infra',
                 'npm install',
             ],
             commands: ['echo hello', 'npx cdk synth --no-notices']
